@@ -144,10 +144,29 @@ header {
     align-items: center;
 }
 header.banner{
-    background: url(https://source.unsplash.com/2000x900/?train);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #e6e6e9 100%, rgba(0, 0, 0, 0.65) 100%),url(https://upload.wikimedia.org/wikipedia/commons/9/92/NS_ICMm_Woerden.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: none;
+    background-position: center;
     height: 50vh;
+}
+header.banner .inhoud{
+    width: 1500px;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 1em;
+    color: rgb(0, 48, 130);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+header.banner .inhoud .banner-text{
+    background: rgba(255, 201, 23, 0.9);
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 header nav{
     display: flex;
