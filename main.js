@@ -2,7 +2,7 @@ import listStories from './data.js'
 
 function injectStory(array){
     const aanbevolenLijst = document.querySelector('section.aanbevolen .lijst')
-    // const jouwLijst = document.querySelector('section.jouwLijst .lijst')
+    const jouwLijst = document.querySelector('section.jouwLijst .lijst')
     array.forEach(story=>{
         const storyEl = `
         <article>
@@ -29,7 +29,7 @@ function injectStory(array){
         </article>
         `
         aanbevolenLijst.insertAdjacentHTML('beforeend', storyEl)
-        // jouwLijst.insertAdjacentHTML('beforeend', storyEl)
+        jouwLijst.insertAdjacentHTML('beforeend', storyEl)
     })
 }
 
