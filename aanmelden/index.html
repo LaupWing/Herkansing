@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Inloggen/Aanmelden</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+       <img class="vul" src="img/vul.png" alt="">
+        <a href="index.html"><img class="logo2" src="../img/Nederlandse-spoorwegen-NS-logo.png" alt=""></a>
+        <a href="aanmelden.html"><img class="logo3" src="../img/Profile.png" alt=""></a>
+        <!--<p class="logo">Logo</p>!-->
+    </header>
+    <div class="main">
+
+
+        <input type="radio" id="radio1" name="radios" checked>
+        <label class="inlogcheck" for="radio1">Inloggen</label>
+
+        <input type="radio" id="radio2" name="radios">
+        <label class="aanmeldcheck" for="radio2">Aanmelden</label>
+
+        <section class="inloggen">
+            <form action="">
+                <div class="maillogin">
+                    <input type="email" id="loginEmail" class="input" placeholder="Uw Email adres">
+                    <label for="loginEmail">Vul uw email in</label>
+                </div>
+                <div class="wachtwoordlogin">
+                    <input type="password" id="loginWachtwoord" class="input" placeholder="Uw wachtwoord">
+                    <label for="loginWachtwoord">vul uw wachtwoord in</label>
+                </div>
+                <button>Log in</button>
+            </form>
+        </section>
+
+        <section class="aanmelden">
+            <form class="aanmeldContent" action="">
+
+
+                <div class="aanmeldNaam">
+                    <input type="password" id="aanmeldWachtwoord" class="input" placeholder="Volledige naam">
+                    <label for="aanmeldWachtwoord">vul voor en achternaam in</label>
+                </div>
+                <div class="geslacht">
+                    <p class="tekst">Geslacht: </p>
+                    <label class="container">Man
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Vrouw
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Andere
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                </div>
+                <p class="tekst">Geboortedatum: </p>
+                <input class="datum" type="date" value="2014-06-12" />
+                <div class="aanmeldmail">
+                    <input type="email" id="aanmeldEmail" class="input" placeholder="E-mail adres:">
+                    <label for="aanmeldEmail">Vul uw email in</label>
+                </div>
+                <p class="meldingemail">Emailadres klopt niet</p>
+
+                <div class="aanmeldwachtwoord">
+                    <input type="password" id="aanmeldWachtwoord" class="input" placeholder="Wachtwoord: ">
+                    <label for="aanmeldWachtwoord">vul uw wachtwoord in</label>
+                </div>
+                <div class="aanmeldBevestigen">
+                    <input type="password" id="bevestigWachtwoord" class="input" placeholder="Wachtwoord bevestigen: ">
+                    <label for="bevestigWachtwoord">vul uw nogmaals wachtwoord in </label>
+                </div>
+                <button>Aanmelden</button>
+            </form>
+        </section>
+
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

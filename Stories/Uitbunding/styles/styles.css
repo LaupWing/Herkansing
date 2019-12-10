@@ -1,0 +1,138 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', sans-serif;
+	background-image: url("../img/spacebackground.png");
+    overflow-x: hidden;
+
+    /* Full height */
+    height:1800px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vul{
+    width: 2em;
+    height: auto;
+    display: inline;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    background-color: #ffff;
+    width: 100%;
+    height: 3.125em;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    align-items: center;
+}
+
+.logo1, .logo3{/*Moet nog veranderd worden ivm met onduidelijkheid*/
+    width: 1.8em;
+    height: auto;
+    margin: 5px;
+}
+.logo1:hover, .logo3:hover{/*Moet nog veranderd worden ivm met onduidelijkheid*/
+    cursor: pointer;
+    
+}
+.logo2 {/*Moet nog veranderd worden ivm met onduidelijkheid*/
+    display: inline-block;
+    width: 3.125em;
+    height: 3.125em;
+    margin: 0 auto;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes flyin {
+ 0%   { 
+ transform: translateX(-200%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;/*dit zorgt ervoor dat de div onder elkaar komen*/
+    margin-top: 8em;
+	align-items: center; /*content word in het midden gezet*/
+}
+.fly{
+    animation: flyin 6s ease-in-out;
+    width: 600px;
+}
+.inhoud{
+    color: white;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+.inhoud p{
+    margin:0;
+}
+
+.avatar {
+	transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    overflow: hidden;
+    margin: auto;
+}
+.avatar::before{
+       animation: flyin 5s ease-out;
+}
+img { 
+    margin-top: 2em;
+    width: 30em; 
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+
+ 
+    .slide-in {
+      opacity:0;
+      transition:all .5s;
+    }
+
+    .align-left.slide-in {
+      transform:translateX(-30%) scale(0.95);
+    }
+    .align-right.slide-in {
+      transform:translateX(30%) scale(0.95);
+    }
+
+    .slide-in.active {
+      opacity:1;
+      transform:translateX(0%) scale(1);
+    }
+.slide-in.active {
+      opacity:1;
+      transform:translateX(0%) scale(1);
+    }
+    
+@media (max-width: 40em) {
+    .fly img{
+        width: 15em;
+        height: auto;
+
+            
+    }
+}
