@@ -1,8 +1,8 @@
-import listStories from './data.js'
+import aanbevolen from './aanbevolen.js'
+import jouwLijst from './jouwlijst.js'
+console.log(jouwLijst)
 
-function injectStory(array){
-    const aanbevolenLijst = document.querySelector('section.aanbevolen .lijst')
-    const jouwLijst = document.querySelector('section.jouwLijst .lijst')
+function injectStory(container, array){
     array.forEach(story=>{
         const storyEl = `
         <article>
@@ -28,13 +28,16 @@ function injectStory(array){
             </div>
         </article>
         `
-        aanbevolenLijst.insertAdjacentHTML('beforeend', storyEl)
-        jouwLijst.insertAdjacentHTML('beforeend', storyEl)
+        container.insertAdjacentHTML('beforeend', storyEl)
     })
 }
 
 const init = ()=>{
-    injectStory(listStories)
+    const aanbevolenLijstContainer = document.querySelector('section.aanbevolen .lijst')
+    const jouwLijstContainer = document.querySelector('section.jouwLijst .lijst')
+
+    injectStory(aanbevolenLijstContainer, aanbevolen)
+    injectStory(jouwLijstContainer, jouwLijst)
     addingEvents()
 }
 

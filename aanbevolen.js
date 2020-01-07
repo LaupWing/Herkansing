@@ -21,7 +21,7 @@ export default [
         time: 12
     },
     {
-        title: 'Very Nice',
+        title: 'Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’',
         link: "Stories/Rustgevend/index.html",
         img: "https://cdn.pastemagazine.com/www/system/images/photo_albums/best-book-covers-july-2019/large/bbcjuly19verynice.jpg?1384968217",
         likes: 100,
