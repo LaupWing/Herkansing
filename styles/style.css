@@ -321,13 +321,30 @@ article .artikeltitel{
     margin-bottom: 1.1em;
 }
 article .artikeltitel h2{
-    text-align: left;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     overflow: hidden;
     width: 70%;
     white-space: nowrap;
     display: inline-block;
+}
+
+article .artikeltitel h2.sliding {
+    text-overflow: initial;
+}
+article .artikeltitel h2.sliding span{
+    animation: moveTo infinite 5s;
+    display: inline-block;
+}
+
+@keyframes moveTo{
+    from{
+        transform: translateX(20%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
 }
 article {
     background-color: #ffff;

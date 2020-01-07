@@ -7,7 +7,7 @@ function injectStory(array){
         const storyEl = `
         <article>
             <div class="artikeltitel">
-                <h2>${story.title}</h2>
+                <h2><span>${story.title}</span></h2>
                 <img class="plusicon" src="img/Plus.png" alt="">
             </div>
             <a href="${story.link}">
@@ -35,6 +35,32 @@ function injectStory(array){
 
 const init = ()=>{
     injectStory(listStories)
+    addingEvents()
+}
+
+
+function addingEvents(){
+    const articles = document.querySelectorAll('article')
+    articles.forEach(article=>{
+        article.addEventListener('mouseover', (event)=>{
+            const item = event.target.closest('article')
+            const h2 = item.querySelector('h2')
+            if(isEllipsisActive(h2)){
+                h2.classList.add('sliding')
+            }
+        })
+        article.addEventListener('mouseout', (event)=>{
+            const item = event.target.closest('article')
+            const h2 = item.querySelector('h2')
+            if(isEllipsisActive(h2)){
+                h2.classList.remove('sliding')
+            }
+        })
+    })
+}
+
+function isEllipsisActive(e) {
+    return (e.offsetWidth < e.scrollWidth);
 }
 
 init()
