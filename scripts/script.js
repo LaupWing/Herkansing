@@ -1,5 +1,6 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 /*eslint-env browser*/
+
 /*var slider = document.getElementById("slider");*/
 /*var output = document.getElementById("demo");*/
 var open = document.getElementById("mobielaside");

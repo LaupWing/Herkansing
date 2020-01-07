@@ -173,6 +173,12 @@ header nav{
     align-items: center;
 }
 
+header .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo1, .logo3{/*Moet nog veranderd worden ivm met onduidelijkheid*/
     width: 1.8em;
     height: auto;
@@ -311,8 +317,17 @@ section .faderight{
 article .artikeltitel{
     text-align: center;
     margin-top: 0.625em;
-    margin-left: 2.5em;
+    /* margin-left: 2.5em; */
     margin-bottom: 1.1em;
+}
+article .artikeltitel h2{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70%;
+    white-space: nowrap;
+    display: inline-block;
 }
 article {
     background-color: #ffff;
