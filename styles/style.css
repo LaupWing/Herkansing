@@ -113,15 +113,17 @@ figure{
 }
 /* input zoeken weergave*/
 .zoeken1 {
-    width: 10em;
+    width: 15em;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: none;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
     padding: 5px 10px;
+}
+.zoeken-field{
+    margin: 50px 0;
+    margin-bottom: 10px;
 }
 /* mobiel filterknop word niet getoond*/
 #mobielaside{
@@ -218,29 +220,39 @@ nav {
     margin: 20px 0 15px 0;
 }
 
-nav .sorteren {
-    display: inline;
+.search .sorteren {
     color: #003082;
     font-weight: 700;
+    margin-bottom: 2px;
+    margin-right: 10px;
 }
 
 nav input {
     display: inline;
 }
-nav input[type="radio"]{
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input[type="radio"]{
     display: none;
 }
-nav label{
-    padding: 7px 10px;
-    margin: 0 5px;
+.search label{
+    padding: 10px 5px;
     text-align: center;
-    border-radius: 5px;
     cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    opacity: .3;
 }
-nav input[type="radio"]:checked + label{
-    border: solid rgba(255, 201, 23, 0.8) 3px;
-    color:rgba(255, 201, 23, 0.8);
-    background: rgba(0, 0, 0, 0.3);
+.search label:first-of-type{
+    padding-right: 15px;
+}
+.search label:last-of-type{
+    padding-left: 15px;
+}
+.search input[type="radio"]:checked + label{
+    border-color: #003082;
+    opacity: 1;
 }
 
 
@@ -710,12 +722,15 @@ aside .select-style:hover {
         max-width: 30em;
     }
     .zoeken{
-        display: none;
+        /* display: none; */
     }
 }
 @media (max-width: 31em){
     .container {
         max-width: 24em;
+    }
+    header.banner{
+        height: 80vh;
     }
      .mobilezoeken{
         display: inline;
@@ -729,8 +744,15 @@ aside .select-style:hover {
         font-size: 16px;
         background-color: white;
     }
-    .zoeken1{
-        display: none;
+    .banner-text h1{
+        font-size: 1.5rem;
+    }
+    .banner-text .zoeken-field{
+        width: 100%;
+        display: flex;
+    }
+    .banner-text .zoeken-field input.zoeken1{
+        width: 100%;
     }
     nav{
         padding:1em;
@@ -840,7 +862,9 @@ aside .select-style:hover {
         max-width: 20em;
         
     }
-    
+    .banner-text .sorteren{
+        display: none;
+    }
 }
 
 @media (max-width: 21em){
@@ -855,6 +879,13 @@ aside .select-style:hover {
         width: 8em;
     }
 }
+
+
+
+
+
+
+
 .overlay {
     height: 0;
     position: fixed;
