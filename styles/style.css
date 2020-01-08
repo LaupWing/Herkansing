@@ -729,6 +729,10 @@ aside .select-style:hover {
     .container {
         max-width: 24em;
     }
+    header.banner .inhoud {
+        max-width: 90vw;
+        padding: 0;
+    }
     header.banner{
         height: 80vh;
     }
