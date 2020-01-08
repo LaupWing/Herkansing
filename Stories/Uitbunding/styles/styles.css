@@ -48,7 +48,9 @@ header {
     margin: 0 auto;
 }
 
-
+p.first{
+    color: #E2007D;
+}
 @keyframes float {
 	0% {
 		transform: translatey(0px);

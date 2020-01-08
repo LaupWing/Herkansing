@@ -530,15 +530,6 @@ input[type='checkbox']:checked + label{
   animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
 }
 
-
-
-
-
-
-
-
-
-
 /* Externe informatie over het verhaal maar kan weggelaten worden*/
 .verhaaltijd {
     position: absolute;
