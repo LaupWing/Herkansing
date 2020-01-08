@@ -673,8 +673,8 @@ aside .select-style:hover {
         transition: box-shadow .15s ease-in-out;
     }
     .overlay{
-        margin-left: 25%;
-        width: 50%;
+        /* margin-left: 25%;
+        width: 50%; */
     }
 }
 @media (max-width: 51em){
@@ -860,16 +860,22 @@ aside .select-style:hover {
     position: fixed;
     z-index: 1000;
     bottom: 0;
+    top: 0;
+    width: 100%;
     left: 0;
     background-color: rgba(255, 201, 23, 0.9);
    /*overflow-y: hidden*/
     transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-content {
     position: relative;
-    top: 25%;
-    width: 100%;
+    width: 80%;
+    max-width: 500px;
     text-align: center;
     margin-top: 0;
     z-index: 1000;
@@ -880,6 +886,9 @@ aside .select-style:hover {
     font-weight: 700;
     color: #003082;
     z-index: 1000;
+}
+.overlay-content > div{
+    margin: 30px 0;
 }
 
 .overlay a {

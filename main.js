@@ -1,7 +1,6 @@
 import aanbevolen from './aanbevolen.js'
 import jouwLijst from './jouwlijst.js'
-console.log(jouwLijst)
-
+import MobileAside from './scripts/mobileaside.js'
 function injectStory(container, array){
     array.forEach(story=>{
         const storyEl = `
@@ -39,6 +38,7 @@ const init = ()=>{
     injectStory(aanbevolenLijstContainer, aanbevolen)
     injectStory(jouwLijstContainer, jouwLijst)
     addingEvents()
+    new MobileAside()
 }
 
 
