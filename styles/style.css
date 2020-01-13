@@ -154,8 +154,8 @@ header.banner{
     height: 50vh;
 }
 header.banner .inhoud{
-    width: 1500px;
-    max-width: 80vw;
+    width: 80vw;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1em;
     color: rgb(0, 48, 130);
