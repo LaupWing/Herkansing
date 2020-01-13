@@ -34,7 +34,7 @@ function injectStory(container, array){
 const init = ()=>{
     const aanbevolenLijstContainer = document.querySelector('section.aanbevolen .lijst')
     const jouwLijstContainer = document.querySelector('section.jouwLijst .lijst')
-
+    window.addEventListener('keydown', goToPornhub)
     injectStory(aanbevolenLijstContainer, aanbevolen)
     injectStory(jouwLijstContainer, jouwLijst)
     addingEvents()
@@ -65,5 +65,27 @@ function addingEvents(){
 function isEllipsisActive(e) {
     return (e.offsetWidth < e.scrollWidth);
 }
+let input = []
+function goToPornhub(e){
+    const secret = 'Jim is gay, suck my dick'
+    const notAllowed = ['Shift', 'Alt', 'Control', 'Backspace', 'Tab']
+    if(e.key==='Backspace'){
+        return input.pop()
+    }
+    if(notAllowed.includes(e.key)){
+        return
+    }
+    input.push(e.key)
+    if(input=== secret){
+        input = []
+    }else{
+        console.log(input.join(''))
+        if(input.join('').trim()=== secret){
+            location.href = 'https://nl.pornhub.com/'
+        }
+    }
+
+}   
+
 
 init()
