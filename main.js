@@ -1,6 +1,7 @@
 import aanbevolen from './aanbevolen.js'
 import jouwLijst from './jouwlijst.js'
 import MobileAside from './scripts/mobileaside.js'
+
 function injectStory(container, array){
     array.forEach(story=>{
         const storyEl = `
@@ -65,7 +66,9 @@ function addingEvents(){
 function isEllipsisActive(e) {
     return (e.offsetWidth < e.scrollWidth);
 }
+
 let input = []
+
 function goToPornhub(e){
     const secret = 'Jim is gay, suck my dick'
     const notAllowed = ['Shift', 'Alt', 'Control', 'Backspace', 'Tab']
@@ -81,7 +84,7 @@ function goToPornhub(e){
     }else{
         console.log(input.join(''))
         if(input.join('').trim()=== secret){
-            location.href = 'https://nl.pornhub.com/'
+            location.href = 'https://www.facebook.com/jim.deven'
         }
     }
 

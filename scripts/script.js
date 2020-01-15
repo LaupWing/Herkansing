@@ -55,9 +55,11 @@ function likeArtikel(){
     }
 }
 
+
 function removePlusTransition(){
     plus.classList.remove('scale');
 }
+
 function removeLikeTransition(){
     like.classList.remove('scale');
 }
