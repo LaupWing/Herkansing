@@ -45,7 +45,7 @@ const init = ()=>{
 }
 
 function checkWindowSize(){
-    if(window.innerWidth < 400){
+    if(window.innerWidth < 430){
         document.querySelector('.jouwLijst .lijst').addEventListener('scroll', debounce(mobileScrollEvent,200))
         document.querySelector('.aanbevolen .lijst').addEventListener('scroll', debounce(mobileScrollEvent,200))
     }
@@ -57,6 +57,7 @@ function mobileScrollEvent(e){
     const maxPoint= e.target.scrollWidth - (e.target.scrollLeft+(e.target.offsetWidth/2)) +40
 
     list.forEach(item=>{
+        item.classList.remove('hover')
         item.querySelector('h2').classList.remove('sliding')
     })
     const findArticleOnThreshhold = list.find(item=>{
@@ -65,13 +66,10 @@ function mobileScrollEvent(e){
     })
     if(findArticleOnThreshhold){
         const h2 = findArticleOnThreshhold.querySelector('h2')
-            if(isEllipsisActive(h2)){
-                h2.classList.add('sliding')
+        if(isEllipsisActive(h2)){
+            h2.classList.add('sliding')
         }
-        // console.log(findArticleOnThreshhold)
-        // centerArticle(findArticleOnThreshhold, e.target)
-        // console.log(findArticleOnThreshhold.getBoundingClientRect())
-        // console.log(findArticleOnThreshhold.offsetLeft)
+        findArticleOnThreshhold.classList.add('hover')
     }
 }
 

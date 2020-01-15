@@ -376,6 +376,12 @@ article:hover {/*Als de gebruiker over een article hovert dan krijgt de gebruike
     cursor: pointer;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
+article.hover{
+    transform: scale(1.06);
+    border-left: blue solid 15px;
+    z-index: 1;/*Dit moest erbij om het een layer effect te geven*/
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
 article:first-of-type{
     transform-origin: left;
 }
@@ -397,6 +403,10 @@ article blockquote {
 }
 article:hover blockquote {
     width: 100%;
+}
+article.hover blockquote {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
 }
 
  .text {/* tekst als je erover heen hovert*/
