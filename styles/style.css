@@ -763,7 +763,7 @@ aside .select-style:hover {
     .container{
         margin: 0,5em;
     }
-    .aanbevolen{
+    .aanbevolen, .jouwLijst{
         padding: 1em;
     }
     nav button{
@@ -850,6 +850,10 @@ aside .select-style:hover {
         margin: 0;
     }
     
+    .lijst{
+        margin: 20px 10px;
+        padding: 40px;
+    }
   
 
 }

@@ -1,6 +1,7 @@
 import aanbevolen from './aanbevolen.js'
 import jouwLijst from './jouwlijst.js'
 import MobileAside from './scripts/mobileaside.js'
+import debounce from './scripts/debounce.js'
 
 function injectStory(container, array){
     array.forEach(story=>{
@@ -40,8 +41,47 @@ const init = ()=>{
     injectStory(jouwLijstContainer, jouwLijst)
     addingEvents()
     new MobileAside()
+    checkWindowSize()
 }
 
+function checkWindowSize(){
+    if(window.innerWidth < 400){
+        document.querySelector('.jouwLijst .lijst').addEventListener('scroll', debounce(mobileScrollEvent,200))
+        document.querySelector('.aanbevolen .lijst').addEventListener('scroll', debounce(mobileScrollEvent,200))
+    }
+}
+
+function mobileScrollEvent(e){
+    const list = Array.from(e.target.querySelectorAll('article'))
+    const minPoint= e.target.scrollLeft + 40 + (e.target.offsetWidth/2)
+    const maxPoint= e.target.scrollWidth - (e.target.scrollLeft+(e.target.offsetWidth/2)) +40
+
+    list.forEach(item=>{
+        item.querySelector('h2').classList.remove('sliding')
+    })
+    const findArticleOnThreshhold = list.find(item=>{
+        const itemOffsetRight = e.target.scrollWidth - (item.offsetLeft + item.offsetWidth)
+        return minPoint >= item.offsetLeft && itemOffsetRight <= maxPoint
+    })
+    if(findArticleOnThreshhold){
+        const h2 = findArticleOnThreshhold.querySelector('h2')
+            if(isEllipsisActive(h2)){
+                h2.classList.add('sliding')
+        }
+        // console.log(findArticleOnThreshhold)
+        // centerArticle(findArticleOnThreshhold, e.target)
+        // console.log(findArticleOnThreshhold.getBoundingClientRect())
+        // console.log(findArticleOnThreshhold.offsetLeft)
+    }
+}
+
+function centerArticle(article, container){
+    const valueToCenter = (window.innerWidth - article.offsetWidth)/2
+    const currentXval = article.getBoundingClientRect().x
+    const diffrence = currentXval - valueToCenter
+    // container.scrollBy(diffrence,0)
+    
+}
 
 function addingEvents(){
     const articles = document.querySelectorAll('article')
