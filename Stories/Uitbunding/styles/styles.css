@@ -48,6 +48,16 @@ header {
     margin: 0 auto;
 }
 
+p.align-right.slide-in:first-of-type{
+    color:  yellow;
+}
+p.align-right.slide-in:last-of-type{
+    color:  orange;
+}
+p.align-left.slide-in{
+    color:  green;
+}
+
 p.first{
     color: #E2007D;
 }
