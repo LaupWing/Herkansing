@@ -844,6 +844,9 @@ aside .select-style:hover {
     label{
         transition: all 0.2s;
     }
+    article:hover blockquote{
+        
+    }
     #keuze1:checked + label{
         color:#003082;
         border-bottom: #003082 solid 2px;
