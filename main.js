@@ -121,7 +121,6 @@ function goToPornhub(e){
     if(input=== secret){
         input = []
     }else{
-        console.log(input.join(''))
         if(input.join('').trim()=== secret){
             location.href = 'https://www.facebook.com/jim.deven'
         }
