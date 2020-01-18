@@ -549,24 +549,27 @@ input[type='checkbox']:checked + label{
     color: #003082;
     background-color: white;
     padding: 0.3em;
-    width: 4.2em;
+    /* width: 4.2em; */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .verhaaltijd p,
 .verhaallikes p {
-    display: inline;
+    display: block;
     margin: 0;
+    font-size: 20px;
 }
 .verhaallikes img {
-    width: 40%;
-    height: 40%;
- 
+    width: 15px;
+    height: auto;
+    margin: 0 5px;
+
 }
 .verhaaltijd img {
-    width: 25%;
-    height: 25%;
+    width: 20px;
+    height: auto;
+    margin: 0 5px;
 }
 .verhaallikes {
     position: absolute;
@@ -578,7 +581,6 @@ input[type='checkbox']:checked + label{
     justify-content: space-around;
     background-color: white;
     padding: 0.3em;
-    width: 3.5em;
 }
 
 
