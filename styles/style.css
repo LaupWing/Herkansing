@@ -653,7 +653,9 @@ aside .select-style:hover {
 
 @media (max-width: 75em) {
     .container {
-        max-width: 50em;
+        max-width: 100%;
+        /* Old */
+        /* max-width: 50em;  */ 
     }
     .faderight{
        display: none;
@@ -690,11 +692,16 @@ aside .select-style:hover {
         /* margin-left: 25%;
         width: 50%; */
     }
-}
-@media (max-width: 51em){
-      .container {
-        max-width: 40em;
+    .lijst{
+        margin: 20px 30px;
     }
+}
+
+@media (max-width: 51em){
+    /* Old */
+    /* .container {
+        max-width: 40em;
+    } */ 
     
     aside{
         max-width: 40em;
@@ -717,20 +724,24 @@ aside .select-style:hover {
         display: none
     }
 
-   
 }
+
+
+
 @media (max-width: 41em){
-    .container {
+    /* Old */
+    /* .container {
         max-width: 30em;
-    }
+    } */
     .zoeken{
         /* display: none; */
     }
 }
 @media (max-width: 31em){
-    .container {
+    /* Old */
+    /* .container {
         max-width: 24em;
-    }
+    } */
     header.banner .inhoud {
         max-width: 90vw;
         padding: 0;
@@ -774,7 +785,7 @@ aside .select-style:hover {
         margin: 0,5em;
     }
     .aanbevolen, .jouwLijst{
-        padding: 1em;
+        /* padding: 1em; */
     }
     nav button{
         display: none;
@@ -871,19 +882,21 @@ aside .select-style:hover {
 
 }
 @media (max-width:24em ){
-     .container {
+    /* Old */
+    /* .container {
         max-width: 20em;
         
-    }
+    } */
     .banner-text .sorteren{
         display: none;
     }
 }
 
 @media (max-width: 21em){
-    .container {
+    /* Old */
+    /* .container {
         max-width: 18em;
-    }
+    } */
     
     aside{
         max-width: 40em;
