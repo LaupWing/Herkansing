@@ -28,23 +28,23 @@ export default [
         time: 8
     },
     {
-        title: 'Dr. Seuss Horten',
+        title: 'Verrassing',
         link: "Stories/Uitbunding/index.html",
-        img: "https://cdn.cp.adobe.io/content/2/rendition/283104a5-039b-40e3-bdaa-f7b1d28d5cc8/version/0/format/jpg/dimension/width/size/200",
+        img: "https://media.istockphoto.com/illustrations/suprise-gift-illustration-id165819165",
         likes: 150,
         time: 12
     },
     {
-        title: 'The Lioness in you',
+        title: 'Beroemd',
         link: "Stories/Deprimerend/index.html",
-        img: "https://marketplace.canva.com/EADajpcXwvU/1/0/501w/canva-rust-orange-lioness-vintage-book-cover-2r7-sbV3ztw.jpg",
+        img: "https://www.maxxium.nl/wp-content/uploads/2018/11/The-Famous-Grouse-Smoky-fles.jpg",
         likes: 250,
         time: 10
     },
     {
-        title: 'The little mermaid',
+        title: 'Zoon',
         link: "Stories/Rustgevend/index.html",
-        img: "https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/37836/large_thumb_stage.jpg",
+        img: "https://images-na.ssl-images-amazon.com/images/I/61U2BPiQjHL._UX679_.jpg",
         likes: 100,
         time: 8
     },

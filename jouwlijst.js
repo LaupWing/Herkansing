@@ -1,44 +1,51 @@
 export default [
     {
-        title: 'End of Watch',
+        title: 'De verwarde man',
         link: "Stories/Rustgevend/index.html",
-        img: "https://prodimage.images-bn.com/pimages/9781501190377_p0_v1_s550x406.jpg",
+        img: "https://comps.canstockphoto.com/muscular-young-man-unsure-or-confused-stock-image_csp20540267.jpg",
         likes: 100,
         time: 8
     },
     {
-        title: 'The Institute',
+        title: 'Toeristische route',
         link: "Stories/Uitbunding/index.html",
-        img: "https://images-na.ssl-images-amazon.com/images/I/51TNIcVTzPL._SX327_BO1,204,203,200_.jpg",
+        img: "https://www.pluswandel4daagsealkmaar.nl/files/2018/05/2018_dag4_v3.jpg",
         likes: 150,
         time: 10
     },
     {
-        title: 'Salem\'s Lot',
+        title: 'Blind',
         link: "Stories/Deprimerend/index.html",
-        img: "https://images.penguinrandomhouse.com/cover/9780345806796",
+        img: "https://media.istockphoto.com/photos/blind-man-walking-on-sidewalk-holding-stick-picture-id470367810",
         likes: 250,
         time: 12
     },
     {
-        title: 'Finders Keepers',
+        title: 'Doof',
         link: "Stories/Rustgevend/index.html",
-        img: "https://kbimages1-a.akamaihd.net/29c2c160-e3e6-4f04-9cfa-92e9a503d991/353/569/90/False/finders-keepers-69.jpg",
+        img: "https://www.lifeprint.com/asl101/images-signs/deafasmall.gif",
         likes: 100,
         time: 8
     },
     {
-        title: 'The Stand',
+        title: 'Stoned',
         link: "Stories/Uitbunding/index.html",
-        img: "https://images4.penguinrandomhouse.com/cover/9780307743688",
+        img: "https://images-na.ssl-images-amazon.com/images/I/51fEBRNxTGL._SY450_.jpg",
         likes: 150,
         time: 12
     },
     {
-        title: 'Doctor Sleep',
+        title: 'Vrijdag de 13e',
         link: "Stories/Deprimerend/index.html",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9tN-oPprVK7oLLHnOPMxizLSQXMd7p9zOkSZub1Mg2r1l4qX&s",
+        img: "https://cdn.webshopapp.com/shops/2090/files/252559889/friday-the-13th-deluxe-art-scale-statue-1-10-jason.jpg",
         likes: 250,
         time: 10
-    }
+    },
+    {
+        title: 'Recept',
+        link: "Stories/Deprimerend/index.html",
+        img: "https://www.dinneratthezoo.com/wp-content/uploads/2019/02/stuffed-zucchini-boats-5.jpg",
+        likes: 250,
+        time: 10
+    },
 ]
