@@ -569,7 +569,7 @@ input[type='checkbox']:checked + label{
 .verhaaltijd img {
     width: 20px;
     height: auto;
-    margin: 0 5px;
+    margin: 0 8px;
 }
 .verhaallikes {
     position: absolute;
